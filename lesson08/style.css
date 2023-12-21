@@ -1,0 +1,96 @@
+body {
+    background-color: gray;
+    padding: 0 20px 0 20px;
+    margin: 0;
+}
+
+header {
+    width: 120px;
+    display: inline-block;
+    border: 2px dotted black;
+    text-align: center;
+    margin: 0 380px 0;
+    font-family: cursive;
+}
+section{
+text-align: center;
+}
+
+h5 {
+    text-align: right;
+    font-family: cursive;
+    font-style: italic;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+
+h4 {
+    font-style: italic;
+    display: block;
+}
+
+div {
+    display: inline-table;
+    width: 340px;
+    height:300px;
+    margin: 5px 5px;
+    text-align: justify;
+    font-size: smaller;
+    padding: 0 10px 0 10px;
+}
+
+div span {
+    color: red;
+}
+
+img {
+    width: 45%;
+    height: 100px;
+    padding: 50px 10px;
+}
+
+#model-s {
+    text-align: left;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#model-3 {
+    text-align: right;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#model-x {
+    text-align: left;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#model-y {
+    text-align: right;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#tm-s {
+    float: right;
+}
+
+#tm-three {
+    float: left;
+}
+
+#tm-x {
+    float: right;
+}
+
+#tm-y {
+    float: left;
+}

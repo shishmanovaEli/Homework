@@ -1,0 +1,32 @@
+nav ul {
+    display: flex;
+    column-gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 10px;
+    justify-content: center;
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+nav ul li a:hover,
+nav ul li a:active {
+    text-decoration: none;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: rgb(40, 19, 227)  ;
+}
+
+nav ul li {
+    background-color: rgb(27, 183, 221);
+    padding: 0 20px 0 20px;
+    border-radius:  15px 15px 15px 15px;
+}
+
+#vertical-nav {
+}
