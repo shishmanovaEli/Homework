@@ -1,0 +1,97 @@
+html,
+body {
+    background-color: rgba(239, 156, 206, 0.992);
+    padding: 0;
+    margin: 15px;
+    scroll-behavior: smooth;
+    display: inline-block;
+}
+
+header {
+    width: 85%;
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+
+nav {
+    width: 20%;
+    float: left;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-bottom: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgba(239, 156, 206, 0.992);
+    background-color: azure;
+    display: inline-block;
+    margin-left: 10px;
+    padding: 10px;
+    transition: transform 0.3s;
+}
+
+nav ul li a:hover {
+    transform: scale(1.5);
+}
+
+.models {
+    width: 100%;
+    margin: 1%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.models div {
+    margin: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: black;
+    color: azure;
+    border-radius: 10px;
+    flex: 0 0 200px;
+    text-align: justify;
+}
+
+.models img {
+    max-width: 100%;
+    padding: 10px;
+    height: auto;
+    float: right;
+}
+
+div.fer1,
+div.history {
+    width: 100%;
+    margin: 2%;
+    margin-top: 0;
+    padding: 1%;
+    background-color: azure;
+    color: black;
+}
+
+h2 {
+    margin-left: 2%;
+    margin-bottom: 0;
+    padding: 1%;
+    text-align: left;
+}
+
+h1,
+h3 {
+    width: 100%;
+    margin: 0 100px;
+    padding: 0;
+    text-align: center;
+}
+
+h5 {
+    text-align: right;
+}

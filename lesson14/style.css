@@ -1,0 +1,106 @@
+section {
+    width: 100%;
+    margin: 0;
+    padding: 20% 0;
+   }
+
+div {
+    width: 100%;
+    padding: 5%;
+    background: green;
+}
+
+.sky {
+    position: relative;
+    width: 100%;
+    animation-name: sky;
+    animation-duration: 10s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+}
+
+.ball {
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 20rem;
+    animation-name: animation;
+    animation-duration: 10s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+}
+
+@keyframes sky {
+    0% {
+        background: rgb(3, 49, 118);
+    }
+    20% {
+        background: rgb(38, 104, 203);
+    }
+    40% {
+        background: rgb(104, 155, 233);
+    }
+    50% {
+        background: rgb(165, 195, 240);
+    }
+    60% {
+        background: rgb(165, 195, 240);
+    }
+    70% {
+        background: rgb(104, 155, 233);
+    }
+    80% {
+        background: rgb(38, 104, 203);
+    }
+    100% {
+        background: rgb(3, 49, 118);
+    }
+}
+
+@keyframes animation {
+    0% {
+        left: 0%;
+        transform: translateY(280px) scale(0.9);
+        background-color: rgb(255, 64, 0);
+    }
+    20% {
+        left: 10%;
+        transform: translateY(200px) scale(1.0);
+        background-color: rgb(226, 140, 18);
+    }
+    30% {
+        left: 20%;
+        transform: translateY(160px) scale(1.2);
+        background-color: rgb(212, 169, 110);
+    }
+    40% {
+        left: 30%;
+        transform: translateY(100px) scale(1.4);
+        background-color: rgb(235, 227, 106);
+    }
+    50% {
+        left: 50%;
+        transform: translateY(0) scale(2.0);
+        background-color: rgb(238, 224, 23);
+    }
+    60% {
+        left: 60%;
+        transform: translateY(100px) scale(1.4);
+        background-color: rgb(235, 227, 106);
+    }
+    70% {
+        left: 70%;
+        transform: translateY(160px) scale(1.2);
+        background-color: rgb(212, 169, 110);
+    }
+    80% {
+        left: 80%;
+        transform: translateY(200px) scale(1.0);
+        background-color: rgb(226, 140, 18);
+    }
+    100% {
+        left: 100%;
+        transform: translateY(280px) scale(0.9);
+        background-color: rgb(255, 64, 0);
+    }
+}

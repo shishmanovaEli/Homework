@@ -4,19 +4,19 @@ body {
 
 section {
     position: relative;
-    margin: 0;
-    padding: 0 29%;
+    margin: 2% 20%;
+    padding: 0 10%;
 }
 
 h1 {
-    padding: 15px 0 0 0;
-    margin: 20px 0 0 0;
+    padding: 20px 0 0 0;
+    margin: 10px 0 0 0;
 }
 
 nav ul {
     display: flex;
     list-style: none;
-    padding: 5px;
+    padding: 10px 0;
     margin: 0;
     justify-content: center;
 }
@@ -38,37 +38,45 @@ nav ul li a:active {
 
 nav ul li {
     background-color: rgb(67, 65, 65);
-    padding: 4px 20px 4px 20px;
+    padding: 1rem 2rem;
 }
 
 ul li:nth-child(1) {
     background-color: rgb(17, 209, 161);
-    border-radius: 5px 5px 5px 5px;
+    border-radius: 1rem 0 0 1rem;
 }
 
 ul li:nth-child(6) {
-    border-radius: 0 5px 5px 0;
+    border-radius: 0 1rem 1rem 0;
 }
 
-nav div {
-    width: 350px;
+#vertical-nav {
+    margin: 0 0 3rem 0;
+
+}
+
+div {
+    width: 90%;
+    display: block;
     text-align: center;
-    margin: 20px;
-    padding: 10px;
-    border-radius: 5px 5px;
+    margin: 10px 3px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px 10px;
     background-color: white;
 }
 
-nav div li {
-    width: 110px;
-    display: block;
-    float: left;
-    margin: 0 30px 0 30px;
-    padding: 0;
+div li {
+    width: 35%;
+    display: inline-block;
+    margin: 0 15px;
+    padding: 10px;
     color: rgb(129, 129, 245);
     background-color: white;
     font-family: sans-serif;
-    border: 1px solid gray;
+    border: 2px solid gray;
+    border-radius: 5px;
+    float: inline-end;
 }
 
 button {
@@ -76,7 +84,12 @@ button {
     background-color: rgb(17, 209, 161);
     color: white;
     padding: 5px;
-    border-radius: 5px 5px 5px 5px;
+    border-radius: 5px;
+}
+
+ul.add-task {
+    padding: 0;
+
 }
 
 div.add-task {
@@ -84,13 +97,7 @@ div.add-task {
     padding: 0 0 20px;
 }
 
-#graph {
-    width: 30px;
-    height: 30px;
-    margin: 0 5px;
-    float: right;
-}
-
+#graph,
 #bin {
     width: 20px;
     height: 20px;
@@ -109,14 +116,24 @@ div.add-task {
     text-decoration: line-through;
 }
 
-#task-3 {
-    text-align: start;
+#task-4 a :hover {
+    background-color: rgb(88, 85, 85);
 }
 
-#task-2 {
-    text-align: start;
-}
-
+#task-3,
+#task-2,
 #task-1 {
     text-align: start;
+
+}
+
+.badge {
+    width: 35%;
+    display: block;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 5px 10px;
+    margin: -15px 0;
+    border-radius: 3px;
+    float: left;
 }

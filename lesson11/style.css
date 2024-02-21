@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 525px;
+    font-family: sans-serif;
+}
+
+header {
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+}
+
+section {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+article {
+    width: 80%;
+    height: 10%;
+    border-top: 2px solid black;
+    padding-left: 40px;
+    padding-right: 70px;
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+article p {
+    text-align: left;
+    width: 10%;
+    padding: 10px;
+    margin: 10px 0;
+    float: left;
+} 
+
+img {
+    width: 150px;
+    height: auto;
+    float: left; 
+    margin: 20px;
+}
+
+ul {
+    height: 20%;
+    padding: 0 10%;
+    margin: 0;
+    list-style: none;
+}
+
+h2 {
+    width: 15%;
+    float: left;
+    padding: 20px 0 0;
+}
+
+#menu {
+    width: 15%;
+    float: left;
+    background-color: rgb(144, 224, 144);
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    order: -1;
+}
+
+#right {
+    width: 15%;
+    padding: 20px;
+    text-align: center;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    order: 2;
+}
+
+#main-contacts {
+    position: relative;
+    float: right;
+
+    width: 89%;
+    text-align: center;
+    font-style: italic;
+    display: inline-flex;
+    flex-direction: row;
+    background-color: rgb(98, 228, 98);
+    order: 3;
+}
+
+#menu ul {
+    background-color: white;
+}
+
+#menu ul li {
+    margin: 0 10px 10px 0;
+}
+
+#menu ul li a:link,
+#menu ul li a:visited {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: black;
+}
+
+#menu ul li a:hover,
+#menu ul li a:active {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: orange;
+}
