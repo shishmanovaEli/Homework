@@ -1,0 +1,158 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+.image {
+    width: 200px;
+    height: 200px;
+}
+
+.container {
+    max-width: 700px;
+    width: 70%;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+
+.container .title {
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+
+.container .title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 75px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+.container form .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+
+form .user-details .input-box {
+    margin-bottom: 15px;
+    display: inline-grid;
+    width: calc(100% / 4 - 20px);
+}
+
+.user-details .input-box .details {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.user-details .input-box input,
+.user-details .input-box select {
+    height: 35px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    border-color: #9b59b6;
+    transition: all 0.3s ease;
+}
+
+.error {
+    color: red;
+    font-size: 90%;
+}
+
+button, input[type="submit"] {
+    width: 25%;
+    margin: 2%;
+    padding: 2%;
+    height: 100%;
+    outline: none !important;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    float: right;
+    cursor: pointer;
+}
+
+.button :hover, input[type="submit"]:hover {
+    background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+}
+
+input[type="text"] {
+    outline: none;
+}
+
+.input-1 {
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    border: 1px solid #01cc40;
+}
+
+.input-2 {
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    border: 1px solid red;
+}
+
+ #deleteBtn {
+    width: 25%;
+    margin: 2%;
+    padding: 2%;
+    height: 100%;
+    outline: none !important;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    float: right;
+    cursor: pointer;
+    background: #f27474;
+    transition: background 0.3s ease;
+    float: right;
+}
+
+ #deleteBtn:hover {
+    background: #ed3939;
+}
+
+@media (min-width: 584px) {
+    .container {
+        display: inline-grid;
+        max-width: 100%;
+    }
+
+    form .user-details .input-box {
+        margin-bottom: 15px;
+    }
+
+    .container form .user-details {
+        max-height: 250px;
+        overflow-y: scroll;
+    }
+
+    .user-details::-webkit-scrollbar {
+        width: 0;
+    }
+}

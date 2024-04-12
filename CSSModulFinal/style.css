@@ -95,3 +95,15 @@ h3 {
 h5 {
     text-align: right;
 }
+@media screen and (max-width: 768px) {
+    .models div {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .models div img {
+        width: 100%;
+    }
+    .fer1 p, .history p {
+        font-size: 0.9rem;
+    }
+}

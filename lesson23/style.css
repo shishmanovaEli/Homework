@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(244, 252, 251);
+    
+    }
+    table {
+        border-collapse: collapse;
+        background-color: rgb(186, 241, 151);
+        width: 100%;
+    }
+    
+    th, td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+    }
+    
+    th {
+        background-color: rgb(74, 219, 115);
+    }
+    
+    input[ type="text"] {
+        width: 200px;
+        margin-right: 10px;
+    }
+    
+    button {
+        padding: 8px 16px;
+        cursor: pointer;
+        border-style:inherit;
+        color: rgb(13, 13, 126);
+        border-radius: 10% ;
+        background-color: rgb(133, 133, 238);
+    }

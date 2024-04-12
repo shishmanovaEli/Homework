@@ -1,11 +1,13 @@
 body {
+    width: 40%;
+    margin: 0 auto;
     background-color: gray;
 }
 
 section {
     position: relative;
-    margin: 2% 20%;
-    padding: 0 10%;
+    margin: 2% 2%;
+    padding: 0;
 }
 
 h1 {
@@ -69,7 +71,7 @@ div {
 div li {
     width: 35%;
     display: inline-block;
-    margin: 0 15px;
+    margin: 0 5%;
     padding: 10px;
     color: rgb(129, 129, 245);
     background-color: white;
@@ -136,4 +138,46 @@ div.add-task {
     margin: -15px 0;
     border-radius: 3px;
     float: left;
+}
+
+@media screen and (max-width: 600px) {
+    #vertical-nav {
+        display: block;
+        text-align: center;
+    }
+
+    #vertical-nav img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .add-task {
+        text-align: center;
+    }
+
+    .add-task input[type="text"] {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    #task-1,
+    #task-2,
+    #task-3,
+    #task-4 {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .badge {
+        text-align: center;
+    }
+
+    header ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header ul li {
+        margin-bottom: 10px;
+    }
 }

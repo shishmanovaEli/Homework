@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AddEdit Record</title>
+  <link rel="stylesheet" href="styleAdd.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="title">Add Record</div>
+    <div id="imgBox">
+      <img src="imageFile.png" alt="Images" style="height: 200px;">
+      <input type="file" id="myFile" multiple>
+    </div>
+
+    <form name="form">
+      <div>
+        <button id="deleteBtn" style="display: none;">Delete</button>
+      </div>
+      <div class="user-details">
+        <div class="input-box">
+          <label for="internName">Intern Name</label>
+          <input type="text" id="internName" name="internName" placeholder="Enter your name">
+          <div class="error" id="internNameError"></div>
+        </div>
+
+        <div class="input-box">
+          <label for="phone">Telephone</label>
+          <input type="tel" id="phone" name="phone" placeholder="" required>
+          <div class="error" id="phoneError"></div>
+        </div>
+
+        <div class="input-box">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="name@domain.com" required>
+          <div class="error" id="emailError"></div>
+        </div>
+
+        <div class="input-box">
+          <label for="startDate">Start Date</label>
+          <input type="date" id="startDate" placeholder="YYYY-MM-DD" min="2024-01-01" max="endDate">
+          <div class="error" id="startDateError"></div>
+        </div>
+
+        <div class="input-box">
+          <label for="endDate">End Date</label>
+          <input type="date" id="endDate" min="startDate">
+          <div class="error" id="endDateError"></div>
+        </div>
+
+        <div class="input-box">
+          <label for="daysLeft">Day(s) left</label>
+          <input type="number" id="daysLeft">
+        </div>
+
+        <div class="input-box">
+          <label for="firstTask">First Task</label>
+          <select name="taskOne" id="task1Select">
+            <option>--select a Task--</option>
+            <option value="Task 1">Task 1</option>
+            <option value="Task 2">Task 2</option>
+            <option value="Task 3">Task 3</option>
+            <option value="Task 4">Task 4</option>
+          </select>
+        </div>
+
+        <div class="input-box">
+          <label for="secondTask">Second Task</label>
+          <select name="taskTwo" id="task2Select">
+            <option>--select a Task--</option>
+            <option value="Task 1">Task 1</option>
+            <option value="Task 2">Task 2</option>
+            <option value="Task 3">Task 3</option>
+            <option value="Task 4">Task 4</option>
+          </select>
+        </div>
+
+        <div class="input-box">
+          <label for="department">Department</label>
+          <select name="department" id="departmentSelect">
+            <option>--select department--</option>
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="React">React</option>
+          </select>
+        </div>
+
+        <div class="input-box">
+          <label for="mentor">Mentor</label>
+          <select name="mentor" id="mentorSelect">
+            <option>-Mentor-</option>
+            <option value="Cvetelina">Cvetelina</option>
+            <option value="Stanislav">Stanislav</option>
+          </select>
+        </div>
+
+        <div class="input-box">
+          <label for="firstTaskResult">First Task Result</label>
+          <input type="number" id="task1Result">
+          <div class="error" id="task1ResultError"></div>
+        </div>
+
+        <div class="input-box">
+          <label for="secondTaskResult">Second Task Result</label>
+          <input type="number" id="task2Result">
+          <div class="error" id="task2ResultError"></div>
+        </div>
+
+      </div>
+
+      <div class="input-box">
+        <input type="file" id="fileInput" multiple>
+      </div>
+
+      <div class="button">
+        <button type="submit" id="addBtn" onclick="addNewUser()">Add</button>
+        <button type="button" id="cancelBtn">Cancel</button>
+        <button id="saveBtn" style="display: none;">Save</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="scriptAdd.js"></script>
+</body>
+
+</html>

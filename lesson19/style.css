@@ -1,0 +1,56 @@
+body {
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/029/943/213/small/vibrant-flower-garden-nature-beauty-as-a-cover-page-background-perfect-for-wallpaper-brochure-and-landing-page-design-templates-generative-ai-photo.jpg);
+     margin: 0;
+    padding: 0;
+    text-align: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+}
+
+div {
+    display: inline-flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+p {
+    padding: 25px;
+}
+
+
+.gallery-container {
+    width: 80%;
+    height: 40%;
+    margin: 0;
+    padding: 5% 0;
+    position: relative;
+    top: 0;
+}
+
+.image-display img {
+    width: 80%;
+    height: auto;
+}
+
+
+.image-gallery {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    text-align: center;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.image-gallery img {
+    width: 50%;
+    height: auto;
+}
+
+.image-gallery :hover {
+    transition: 0.1s ease-in;
+    transform: scale(1.2);
+}

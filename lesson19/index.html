@@ -1,15 +1,45 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>My Page</title>
-  <link rel="stylesheet" href="style.css">
-  <style></style>
-  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
-<script src="script.js"> </script>
+<body>
+    <div class="gallery-container">
+        <div class="image-display" id="display">
+            <img id="start" src="Trayana-Top.jpg">
+            <p>Паметник на свободата в Русе - юли 2023г.</p>
+        </div>
+        <div class="image-gallery" id="gallery">
+            <div id="top">
+                <img src="Trayana-Top.jpg" onclick="changeImages('Trayana-Top.jpg', 'Паметник на свободата в Русе - юли 2023г.')">
+                <p>Паметник на свободата в Русе - юли 2023г.</p>
+            </div>
+            <div id="trayana-2">
+                <img src="Trayana-2.jpg" onclick="changeImages('Trayana-2.jpg', 'Река Дунав, Русе - юли 2023г.')">
+                <p>Река Дунав, Русе - юли 2023г.</p>
+            </div>
+            <div id="trayana-3">
+                <img src="Trayana-3.jpg" onclick="changeImages('Trayana-3.jpg', 'Триатлон - Купа Пловдив -август 2023г.')">
+                <p>Триатлон - Купа Пловдив -август 2023г.</p>
+            </div>
+            <div id="trayana-4">
+                <img src="Trayana-4.jpg" onclick="changeImages('Trayana-4.jpg', 'Държавно първенство по колоездене (по часовник) - Дупница - юни 2023г.')">
+                <p>Държавно първенство по колоездене (по часовник) - Дупница - юни 2023г.</p>
+            </div>
+            <div id="trayana-5">
+                <img src="Trayana-5.jpg" onclick="changeImages('Trayana-5.jpg', 'Държавно първенстов по триатлон - Пловдив - август 2022г.')">
+                <p>Държавно първенстов по триатлон - Пловдив - август 2022г.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"> </script>
+
 </body>
+
 </html>
